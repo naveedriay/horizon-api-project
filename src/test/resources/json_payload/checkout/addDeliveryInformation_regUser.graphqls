@@ -1,0 +1,40 @@
+mutation{
+    addDeliveryInformation(
+        checkoutId: "{checkoutUUID}",
+        metadata: {
+            defaultDelivery: true,
+            externalId: "{addressId}"
+        }
+        contact: {
+            title: "Mr"
+            firstName: "Nav"
+            lastName: "Tester"
+            phoneNumber: "01123456789"
+        },
+        address: {
+            addressLine1: "57 Blenheim Gardens"
+            postalCode: "RG1 5QG"
+            city: "Reading"
+            country: "GB"
+        }
+    ){
+        id
+        location{
+            type
+            ... on DeliveryLocation {
+                contact{
+                    title
+                    firstName
+                    lastName
+                    phoneNumber
+                }
+                address{
+                    addressLine1
+                    postalCode
+                    city
+                    country
+                }
+            }
+        }
+    }
+}

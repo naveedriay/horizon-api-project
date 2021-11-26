@@ -1,0 +1,22 @@
+{
+  "currency": "GBP",
+  "locale": "en-GB",
+  "siteId": "10",
+  "status": "LOCKED",
+  "channel" : "WEB",
+  "incrementQty": false,
+  "items": [
+    {
+      "skuId": "048791",
+      "quantity": 1
+    },
+    {
+      "skuId": "005955",
+      "quantity": 0
+    },
+    {
+      "skuId": "001143",
+      "quantity": 0
+    }
+  ]
+}

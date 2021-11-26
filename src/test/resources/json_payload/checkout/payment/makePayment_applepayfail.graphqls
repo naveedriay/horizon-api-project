@@ -1,0 +1,29 @@
+mutation {
+    makePayment(
+        method: {
+            paymentMethod: {
+                type: "applepay",
+                applePayToken: "{applePayToken}"
+            }
+        },
+        amount:{currency:"GBP",value:"176.76"}
+        countryCode: "GB"
+    )
+    {
+        created
+        transactionId
+        paymentId
+        status
+        mode {
+            provider
+            method
+            lastFourCardDigits
+            expiryDate
+        }
+        pspReference
+        money {
+            currency
+            value
+        }
+    }
+}

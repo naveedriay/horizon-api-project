@@ -1,0 +1,10 @@
+query {
+    getPaymentMethods(
+        source:{countryCode:"GB", locale:"en-GB"},
+        amount:{value:"76.76", currency:"GBP"}
+    ) {
+        provider
+        method
+        specifics
+    }
+}

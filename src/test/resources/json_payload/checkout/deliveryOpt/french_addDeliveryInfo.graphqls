@@ -1,0 +1,39 @@
+mutation{
+  addDeliveryInformation(
+    checkoutId: "{checkoutUUID}",
+    contact: {
+      title: "Mr"
+      firstName: "Jacques"
+      lastName: "Leterme"
+      phoneNumber: "33199231838"
+    },
+    address: {
+      addressLine1: "39 quai Saint-Nicolas"
+      postalCode: "06400"
+      city: "Toulouse"
+      country: "FR"
+    }
+  ){
+    id
+    location{
+      type
+      ... on DeliveryLocation {
+        contact{
+          title
+          firstName
+          lastName
+          phoneNumber
+        }
+        address{
+          addressLine1
+          postalCode
+          city
+          country
+        }
+      }
+      ... on StoreLocation {
+        storeId
+      }
+    }
+  }
+}

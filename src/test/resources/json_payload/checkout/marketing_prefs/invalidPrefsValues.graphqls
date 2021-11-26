@@ -1,0 +1,16 @@
+mutation {
+    addCustomerIdentity(
+        checkoutId: "{checkoutUUID}",
+        identity: {
+            email: "test@mail.com",
+            smsMarketingConsent: agree
+        }
+    ){
+        id
+        customer {
+            email
+            smsMarketingConsent
+            emailMarketingConsent
+        }
+    }
+}

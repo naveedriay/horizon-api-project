@@ -1,0 +1,7 @@
+mutation {
+    submitCheckout(checkoutId: "{checkoutUUID}") {
+        status
+        orderId
+        message
+   }
+}

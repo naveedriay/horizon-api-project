@@ -1,0 +1,20 @@
+{
+  "SiteId":"10",
+  "Locale":"en",
+  "Config":"brand",
+  "PageNumber":1,
+  "PageSize":10,
+  "SelectedRefinements":{
+
+  },
+  "Overrides":{
+    "ExcludeNotAvailable":true
+  },
+  "AdvancedQuery":"",
+  "IncludeCategory":true,
+  "IncludeFacets":true,
+  "IncludeSortOptions":true,
+  "IncludeBrand":false,
+  "IncludePromotion":true,
+  "BrandSlug":"holland-barrett"
+}

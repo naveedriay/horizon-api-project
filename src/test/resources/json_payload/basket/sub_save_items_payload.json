@@ -1,0 +1,15 @@
+{
+  "currency": "GBP",
+  "locale": "en-GB",
+  "siteId": "10",
+  "status": "ACTIVE",
+  "channel" : "WEB",
+  "items": [
+    {
+      "skuId": "083171",
+      "quantity": 2,
+      "period": 2,
+      "frequency": 4
+    }
+  ]
+}

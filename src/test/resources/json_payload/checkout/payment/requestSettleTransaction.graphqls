@@ -1,0 +1,30 @@
+mutation {
+    requestSettle(
+        transactionId: "{transactionId}",
+        orderId: "{orderId}",
+        amount:{
+            value: "{basketTotal}",
+            currency: "GBP"
+        }
+    )
+    {
+        created
+        payments{
+            paymentId,
+            status,
+            pspReference
+        }
+        total {
+            currency,
+            value
+        }
+        settleRequested{
+            currency,
+            value
+        }
+        settleConfirmed{
+            currency,
+            value
+        }
+    }
+}

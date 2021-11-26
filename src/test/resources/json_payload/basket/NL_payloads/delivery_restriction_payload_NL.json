@@ -1,0 +1,20 @@
+{
+  "currency": "EUR",
+  "locale": "nl-NL",
+  "siteId": "40",
+  "status": "ACTIVE",
+  "items": [
+    {
+      "skuId": "018904",
+      "quantity": 1
+    },
+    {
+      "skuId": "000820",
+      "quantity": 1
+    },
+    {
+      "skuId": "032979",
+      "quantity": 1
+    }
+  ]
+}

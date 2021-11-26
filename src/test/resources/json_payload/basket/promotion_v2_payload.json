@@ -1,0 +1,24 @@
+{
+  "locale": "en-GB",
+  "siteId": "10",
+  "currency": "GBP",
+  "status": "ACTIVE",
+  "items": [
+    {
+      "skuId": "081874",
+      "quantity": 2
+    },
+    {
+      "skuId": "017810",
+      "quantity": 1
+    },
+    {
+      "skuId": "048791",
+      "quantity": 3
+    },
+    {
+      "skuId": "004067",
+      "quantity": 3
+    }
+  ]
+}

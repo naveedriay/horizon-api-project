@@ -1,0 +1,16 @@
+{
+  "SiteId":"10",
+  "Locale":"en",
+  "Config":"promotion",
+  "PageNumber":1,
+  "PageSize":20,
+  "Overrides":{
+    "ExcludeNotAvailable":true
+  },
+  "IncludeCategory":true,
+  "IncludeFacets":true,
+  "IncludeSortOptions":true,
+  "IncludeBrand":false,
+  "IncludePromotion":true,
+  "PromotionSlug":"1-2-price"
+}

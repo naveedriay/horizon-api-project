@@ -1,0 +1,34 @@
+mutation {
+    makePayment(
+        method: {
+            paymentMethod:{
+                type:"scheme",
+                holderName:"Mr Ben",
+                encryptedCardNumber: "test_5100290029002909",
+                encryptedExpiryMonth: "test_03",
+                encryptedExpiryYear: "test_2000",
+                encryptedSecurityCode: "test_737"
+            },
+            browserInfo:{}
+        },
+        amount:{currency:"GBP",value:"176.76"}
+        countryCode: "GB"
+    )
+    {
+        created
+        transactionId
+        paymentId
+        status
+        mode {
+            provider
+            method
+            lastFourCardDigits
+            expiryDate
+        }
+        pspReference
+        money {
+            currency
+            value
+        }
+    }
+}

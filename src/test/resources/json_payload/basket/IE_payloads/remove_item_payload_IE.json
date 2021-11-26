@@ -1,0 +1,21 @@
+{
+  "currency": "EUR",
+  "locale": "en-IE",
+  "siteId": "30",
+  "status": "LOCKED",
+  "incrementQty": false,
+  "items": [
+    {
+      "skuId": "048791",
+      "quantity": 1
+    },
+    {
+      "skuId": "018904",
+      "quantity": 0
+    },
+    {
+      "skuId": "084144",
+      "quantity": 0
+    }
+  ]
+}

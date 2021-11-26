@@ -1,0 +1,18 @@
+{
+  "currency": "GBP",
+  "locale": "en-GB",
+  "siteId": "10",
+  "incrementQty": false,
+  "items": [
+    {
+      "skuId": "021031",
+      "quantity": 1
+    },
+    {
+      "skuId": "035296",
+      "quantity": 2
+    }
+  ],
+  "rewardCardNumber": "2916000000361",
+  "rewardCouponCodes": "9815000015135,9815000017221"
+}

@@ -1,0 +1,48 @@
+mutation
+   UpdateBasketItem
+   {
+        updateItems(
+            items: [
+                {
+                    id: "001380"
+                    quantity: 1
+                },
+                {
+                    id: "001250"
+                    quantity: 1
+                },
+                {
+                    id: "003969"
+                    quantity: 1,
+                    period: 1,
+                    frequency: 4
+                }
+            ],
+            incrementQuantity: false
+            serviceConfiguration: {
+                locale: "nl-NL"
+                siteId: 40
+                currency: "EUR"
+            }
+        ) {
+        itemErrors {
+            id
+            status
+        }
+        basket {
+            id
+            locale
+            currency
+            subtotal
+            total
+            items {
+                id
+                period
+                frequency
+                name
+                quantity
+                total
+            }
+        }
+    }
+}

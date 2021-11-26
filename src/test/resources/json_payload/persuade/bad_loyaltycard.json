@@ -1,0 +1,12 @@
+{
+  "customer": {
+    "email": "test@mail.com",
+    "first-name": "fname",
+    "last-name": "lname",
+    "customer-identifier": {
+      "scope": "OCH",
+      "id": ""
+    }
+  },
+  "country": "GB"
+}

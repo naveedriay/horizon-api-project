@@ -1,0 +1,21 @@
+{
+  "SiteId":"10",
+  "Locale":"en",
+  "Config":"brand",
+  "PageNumber":1,
+  "PageSize":20,
+  "SelectedRefinements":{
+
+  },
+  "Overrides":{
+    "ExcludeNotAvailable":true
+  },
+  "AdvancedQuery":"",
+  "IncludeCategory":true,
+  "IncludeFacets":true,
+  "IncludeSortOptions":true,
+  "IncludeBrand":false,
+  "IncludePromotion":true,
+  "SortBy": "final_price:a",
+  "BrandSlug":"dr-organic"
+}

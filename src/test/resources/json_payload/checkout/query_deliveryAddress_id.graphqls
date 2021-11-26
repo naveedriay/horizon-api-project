@@ -1,0 +1,27 @@
+query{
+    deliveryAddresses(
+        checkoutId: "{checkoutUUID}",
+        addressId: "{addressId}"
+    ) {
+        contact {
+            title
+            firstName
+            lastName
+            phoneNumber
+        }
+        address {
+            addressLine1
+            addressLine2
+            addressLine3
+            postalCode
+            city
+            state
+            country
+        }
+        metadata {
+            defaultContact
+            defaultDelivery
+            externalId
+        }
+    }
+}

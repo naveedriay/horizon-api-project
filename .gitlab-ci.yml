@@ -1,0 +1,40 @@
+stages:
+  - build
+  - test
+
+
+variables:
+  MAVEN_CLI_OPTS: "-s .m2/settings.xml --batch-mode"
+  MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
+  #CUCMBR_OPTS: "-Dcucumber.options="
+
+cache:
+  paths:
+    - .m2/repository/
+    - target/
+
+# this job installs JDK8 + maven
+api-test-build:
+  image: maven:3-jdk-8
+  stage: build
+  tags:
+    - generic
+  script:
+    - mvn compile
+
+api-test-run:
+  image: maven:3-jdk-8
+  stage: test
+  tags:
+    - generic
+  script:
+    - echo $CUCMBR_OPTS
+    - echo $CI_COMMIT_BRANCH
+    - mvn clean -U install "$CUCMBR_OPTS"
+  artifacts:
+    expire_in: 1 week
+    when: always
+    reports:
+      junit:
+        - target/cucumber-reports/cucumber.xml
+#        - target/surefire-reports/TEST-*.xml

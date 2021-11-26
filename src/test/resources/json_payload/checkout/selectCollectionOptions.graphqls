@@ -1,0 +1,42 @@
+mutation{
+    selectCollectionOption(
+        checkoutId: "{checkoutUUID}",
+        optionId: "{optionID}",
+        contact: {
+            title: "Mr"
+            firstName: "Nav",
+            lastName: "Tester",
+            phoneNumber: "07878787878"
+        }
+    ){
+        id
+        location{
+            type
+            ... on StoreLocation {
+                storeDetails{
+                    name
+                    storeId
+                    address
+                    distance{
+                        unit
+                        value
+                    }
+                    coordinates{
+                        longitude
+                        latitude
+                    }
+                    storeTimes{
+                        day
+                        openingHours
+                    }
+                }
+                deliveryOption{
+                    price{
+                        amount
+                        currency
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+mutation{
+    addPaymentInformation(
+        checkoutId: "{checkoutUUID}",
+        payment: {
+            paymentReference: "{pspReference}",
+            transactionId:"{transactionId}",
+            paymentDetails: {
+                amount: {
+                    amount: "{basketTotal}"
+                    currency: "GBP"
+                },
+                cardSummary: "1111",
+                expiryDate: "04/22",
+                paymentMethod: "visa"
+            }
+            address: {
+                addressLine1: "50 Byron Road"
+                postalCode: "E17 4SW"
+                city: "london"
+                country: "GB"
+            }
+        }
+    ){
+        id
+        paymentInformation {
+            paymentReference
+            transactionId
+            paymentDetails {
+                paymentMethod
+                expiryDate
+                cardSummary
+                amount {
+                    amount
+                    currency
+                }
+            }
+            address {
+                addressLine1
+                addressLine2
+                addressLine3
+                city
+                country
+                postalCode
+                state
+            }
+        }
+    }
+}

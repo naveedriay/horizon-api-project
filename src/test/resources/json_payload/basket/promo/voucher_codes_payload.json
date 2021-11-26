@@ -1,0 +1,22 @@
+{
+  "basket": {
+    "locale": "en-GB",
+    "siteId": "10",
+    "currency": "GBP",
+    "items": [
+      {
+        "skuId": "020343",
+        "quantity": 1,
+        "unitPrice": 22.49
+      },
+      {
+        "skuId": "000932",
+        "quantity": 2,
+        "unitPrice": 4.99
+      }
+    ],
+    "voucherCodes": [
+      "DIGITAL"
+    ]
+  }
+}

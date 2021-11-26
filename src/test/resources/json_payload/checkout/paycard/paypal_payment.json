@@ -1,0 +1,10 @@
+{
+  "userId": "978582501",
+  "token": {
+    "provider": "ADYEN",
+    "value": "831634053957835E"
+  },
+  "method": "PAYPAL",
+  "billingAgreementId": "MG5NDU5PXX37N",
+  "paypalShopperEmailId": "test@handb.com"
+}

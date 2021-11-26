@@ -1,0 +1,25 @@
+mutation {
+    addCustomerIdentity(
+        checkoutId: "{checkoutUUID}",
+        identity: {
+            email: "tolafasoyiro@hollandandbarrett.com",
+            customerId: "1591686886",
+            ochId: "1-2D47DMI",
+            contact: {
+                firstName: "Tola",
+                lastName: "Fasoyiro"
+            },
+            smsMarketingConsent: false,
+            emailMarketingConsent: false
+        }
+    )   {
+        id
+        customer {
+            email
+            customerId
+            ochId
+            smsMarketingConsent
+            emailMarketingConsent
+        }
+    }
+}

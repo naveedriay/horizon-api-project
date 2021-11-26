@@ -1,0 +1,15 @@
+{
+  "address":{
+    "addressLine1": "les portes",
+    "postcode": "53410",
+    "countryCode": "FRA",
+    "city": "Saint Ouen"
+  },
+  "limit":{
+    "maxResult":1000
+  },
+  "currency": "EUR",
+  "deliveryMethods":[
+    "HOME_DELIVERY"
+  ]
+}

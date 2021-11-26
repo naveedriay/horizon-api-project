@@ -1,0 +1,12 @@
+{
+  "address":{
+    "postcode": "CV12AB"
+  },
+  "limit":{
+    "maxResult":1000
+  },
+  "currency": "GBP",
+  "deliveryMethods":[
+    "COLLECTION_POINT"
+  ]
+}

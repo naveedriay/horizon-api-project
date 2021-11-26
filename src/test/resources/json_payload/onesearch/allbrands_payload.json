@@ -1,0 +1,7 @@
+{
+  "SiteId":10,
+  "Locale":"en",
+  "Config":"products",
+  "presets": ["brands"],
+  "Overrides": { "ExcludeNotAvailable": true }
+}

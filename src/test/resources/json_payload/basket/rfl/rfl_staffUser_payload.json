@@ -1,0 +1,18 @@
+{
+  "currency": "GBP",
+  "locale": "en-GB",
+  "siteId": "10",
+  "customerId": "979156020",
+  "ochId": "1-1WCHTM6",
+  "incrementQty": false,
+  "items": [
+    {
+      "skuId": "019015",
+      "quantity": 1
+    },
+    {
+      "skuId": "042727",
+      "quantity": 1
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+mutation{
+  addDeliveryInformation(
+    checkoutId: "{checkoutUUID}",
+    contact: {
+      title: "Mr"
+      firstName: "Armstrong"
+      lastName: "Humphrey"
+      phoneNumber: "0299231838"
+    },
+    address: {
+      addressLine1: "3 Doris Street"
+      postalCode: "NSW 2060"
+      city: "North Sydney"
+      country: "AU"
+    }
+  ){
+    id
+    location{
+      type
+      ... on DeliveryLocation {
+        contact{
+          title
+          firstName
+          lastName
+          phoneNumber
+        }
+        address{
+          addressLine1
+          postalCode
+          city
+          country
+        }
+      }
+      ... on StoreLocation {
+        storeId
+      }
+    }
+  }
+}

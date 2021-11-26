@@ -1,0 +1,54 @@
+query{
+    collectionOptions(
+        checkoutId: "{checkoutUUID}",
+        query:{
+            address:{
+                addressLine1: "2 Radnor Park Road",
+                city: "Folkestone",
+                country:"UK",
+                postalCode: "CT19 5AU"
+            },
+            limit:{
+                maxHBStore: 5,
+                maxCollectionPoint: 5
+            }
+        }
+    )
+    {
+        id
+        type
+        price {
+            amount
+            currency
+        }
+        timeWindow{
+            from
+            to
+        }
+        storeDetails{
+            name
+            storeId
+            address
+            storeAddress{
+                addressLine1
+                addressLine2
+                addressLine3
+                city
+                postalCode
+                country
+            }
+            distance{
+                unit
+                value
+            }
+            coordinates{
+                longitude
+                latitude
+            }
+            storeTimes{
+                day
+                openingHours
+            }
+        }
+    }
+}

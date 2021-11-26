@@ -1,0 +1,19 @@
+{
+  "basket": {
+    "currency": "GBP",
+    "locale": "en-GB",
+    "siteId": "10",
+    "items": [
+      {
+        "skuId": "004293",
+        "quantity": 2,
+        "unitPrice": 19.99
+      },
+      {
+        "skuId": "001698",
+        "quantity": 2,
+        "unitPrice": 10.89
+      }
+    ]
+  }
+}

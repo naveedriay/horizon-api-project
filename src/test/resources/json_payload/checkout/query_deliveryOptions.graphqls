@@ -1,0 +1,16 @@
+query{
+    deliveryOptions(checkoutId: "{checkoutUUID}"){
+        id
+        optionId
+        type
+        price{
+            amount
+            currency
+        }
+        cutoff
+        timeWindow{
+            from
+            to
+        }
+    }
+}

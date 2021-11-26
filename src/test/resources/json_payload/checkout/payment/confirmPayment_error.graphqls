@@ -1,0 +1,9 @@
+mutation {
+    confirmPayment(
+        transactionId:"c48a56b1-b91a-4b97-ab0f-77a47cc46dc0",
+        paymentId:"d1438bfc-f5d3-4cb3-bc24-de5b63ec55b8",
+        payload: {}
+    ) {
+        created
+    }
+}

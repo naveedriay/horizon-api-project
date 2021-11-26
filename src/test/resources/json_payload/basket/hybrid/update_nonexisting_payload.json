@@ -1,0 +1,16 @@
+{
+  "siteId" : "10",
+  "currency": "GBP",
+  "locale": "en-GB",
+  "incrementQty": true,
+  "sessionInfo": {
+    "JSESSIONID": "iH7nGIZAhcJLFeO40H_EmUP5tuvCS90Xfht6-EMupUp7hihDFXYn!-1051895545"
+  },
+  "uuid": "14de9cfc-84db-451f-b4d2-7241a0461d0a",
+  "items": [
+    {
+      "skuId": "097652",
+      "quantity": 2
+    }
+  ]
+}

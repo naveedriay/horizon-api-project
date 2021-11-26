@@ -1,0 +1,12 @@
+{
+  "status": "ACTIVE",
+  "items": [
+    {
+      "skuId": "048791",
+      "quantity": 1
+    },{
+      "skuId": "001014",
+      "quantity": 1
+    }
+  ]
+}

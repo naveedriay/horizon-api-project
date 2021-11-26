@@ -1,0 +1,11 @@
+{
+  "userId": "978582501",
+  "token": {
+    "provider": "ADYEN",
+    "value": "hu75461YU124IHAX"
+  },
+  "lastDigits": "0018",
+  "type": "amex",
+  "expiryMonth": "3",
+  "expiryYear": "30"
+}

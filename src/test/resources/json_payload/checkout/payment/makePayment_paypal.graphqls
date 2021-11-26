@@ -1,0 +1,35 @@
+mutation {
+    makePayment(
+        method: {
+            paymentMethod: {
+                type:"paypal"
+            }
+        },
+        amount:{
+            currency:"GBP",
+            value:"176.76"
+        }
+        countryCode: "GB",
+        savePayment: true,
+        customer:{
+            shopperReference: "{customerId}",
+            email: "test@handb.com"
+            ipAddress: "182.16.60.244"
+            shopperName: {
+                firstName: "Nav"
+                lastName: "Tester"
+            }
+        }
+    )
+    {
+        created
+        transactionId
+        paymentId
+        status
+        pspReference
+        money {
+            currency
+            value
+        }
+    }
+}

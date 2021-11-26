@@ -1,0 +1,27 @@
+mutation{
+    upsertCustomerAddress(
+        userId: "{userId}"
+        customerAddress: {
+            contact: {
+                title: "Mr"
+                firstName: "Naveed"
+                lastName: "Tester"
+                phoneNumber: "07878787878"
+            },
+            address: {
+                addressLine1: "50 Byron Road"
+                addressLine2: "Beaumont Halls"
+                postalCode: "E17 4SW"
+                city: "London"
+                country: "GB"
+            },
+            metadata: {
+                defaultDelivery: false
+            }
+        }
+    ) {
+        id
+        status
+    }
+}
+

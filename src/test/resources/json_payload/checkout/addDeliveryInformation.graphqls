@@ -1,0 +1,36 @@
+mutation{
+    addDeliveryInformation(
+        checkoutId: "{checkoutUUID}",
+        contact: {
+            title: "Mr"
+            firstName: "Nav"
+            lastName: "Tester"
+            phoneNumber: "01123456789"
+        },
+        address: {
+            addressLine1: "50 Byron Road"
+            postalCode: "E17 4SW"
+            city: "london"
+            country: "GB"
+        }
+    ){
+        id
+        location{
+            type
+            ... on DeliveryLocation {
+                contact{
+                    title
+                    firstName
+                    lastName
+                    phoneNumber
+                }
+                address{
+                    addressLine1
+                    postalCode
+                    city
+                    country
+                }
+            }
+        }
+    }
+}

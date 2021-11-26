@@ -1,0 +1,32 @@
+mutation {
+    updateItem(
+        item: {
+            id: "003969",
+            quantity: 2
+        },
+        incrementQuantity: true
+        serviceConfiguration: {
+            locale: "en-GB"
+            siteId: 10
+            currency: "GBP"
+        }
+    ) {
+        itemErrors {
+            id
+            status
+        }
+        basket {
+            id
+            locale
+            currency
+            subtotal
+            total
+            items {
+                id
+                name
+                quantity
+                total
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "SiteId":"10",
+  "Locale":"en",
+  "Config":"plp",
+  "PageNumber":1,
+  "PageSize":10,
+  "Overrides":{
+    "ExcludeNotAvailable":true
+  },
+  "IncludeCategory":true,
+  "IncludeFacets":true,
+  "IncludeSortOptions":true,
+  "IncludeBrand":true,
+  "IncludePromotion":true,
+  "IncludeDataQueries":true,
+  "categorypath":"vitamins-supplements/vitamins"
+}

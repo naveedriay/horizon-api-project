@@ -1,0 +1,17 @@
+{
+  "currency": "EUR",
+  "locale": "it-IT",
+  "siteId": "66",
+  "status": "ACTIVE",
+  "incrementQty": true,
+  "items": [
+    {
+      "skuId": "001014",
+      "quantity": 2
+    }
+  ],
+  "deliveryOption": {
+    "deliveryType": "INTERNATIONAL_EXPRESS",
+    "destinationCountry": "IT"
+  }
+}

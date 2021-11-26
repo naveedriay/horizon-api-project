@@ -1,0 +1,39 @@
+mutation{
+  addDeliveryInformation(
+    checkoutId: "{checkoutUUID}",
+    contact: {
+      title: "Mrs"
+      firstName: "Marina"
+      lastName: "Krause"
+      phoneNumber: "0711316388"
+    },
+    address: {
+      addressLine1: "Ollenhauer Str. 78"
+      postalCode: "70565"
+      city: "Stuttgart"
+      country: "DE"
+    }
+  ){
+    id
+    location{
+      type
+      ... on DeliveryLocation {
+        contact{
+          title
+          firstName
+          lastName
+          phoneNumber
+        }
+        address{
+          addressLine1
+          postalCode
+          city
+          country
+        }
+      }
+      ... on StoreLocation {
+        storeId
+      }
+    }
+  }
+}

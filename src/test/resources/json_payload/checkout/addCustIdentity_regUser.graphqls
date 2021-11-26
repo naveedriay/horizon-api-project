@@ -1,0 +1,23 @@
+mutation {
+    addCustomerIdentity(
+        checkoutId: "{checkoutUUID}",
+        identity: {
+            email: "navtest1@gmail.com",
+            customerId: "958625400",
+            ochId: "1-16XP5OK",
+            contact: {
+                firstName: "Nav",
+                lastName: "Test"
+            },
+            smsMarketingConsent: false,
+            emailMarketingConsent: true
+        }
+    )   {
+        id
+        customer {
+            email
+            smsMarketingConsent
+            emailMarketingConsent
+        }
+    }
+}

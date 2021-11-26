@@ -1,0 +1,27 @@
+query {
+    basket(
+        serviceConfiguration: {
+            locale: "en-IE"
+            siteId: 30
+            currency: "EUR"
+        }
+    )
+    {
+        id
+        items {
+            id
+            name
+            quantity
+            total
+            unitNowPrice
+            subtotal
+            slug
+        }
+        shipping {
+            deliveryType
+            price
+        }
+        subtotal
+        total
+    }
+}

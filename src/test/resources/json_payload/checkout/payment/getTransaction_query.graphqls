@@ -1,0 +1,17 @@
+query {
+    getTransaction(transactionId: "{transactionId}"){
+        transactionId,
+        total{
+            currency,
+            value
+        }
+        payments {
+            paymentId
+            status
+            money{
+                currency
+                value
+            }
+        }
+    }
+}

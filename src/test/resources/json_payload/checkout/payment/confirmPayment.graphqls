@@ -1,0 +1,17 @@
+mutation {
+    confirmPayment(
+        transactionId: "{transactionId}",
+        paymentId:"{paymentId}",
+        payload: {}
+    ) {
+        created
+        transactionId
+        paymentId
+        status
+        pspReference
+        money {
+            currency
+            value
+        }
+    }
+}

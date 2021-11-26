@@ -1,0 +1,25 @@
+mutation {
+    requestCancel(
+        transactionId: "{transactionId}"
+    )
+    {
+        created
+        payments{
+            paymentId,
+            status,
+            pspReference
+        }
+        total {
+            currency,
+            value
+        }
+        settleRequested{
+            currency,
+            value
+        }
+        settleConfirmed{
+            currency,
+            value
+        }
+    }
+}

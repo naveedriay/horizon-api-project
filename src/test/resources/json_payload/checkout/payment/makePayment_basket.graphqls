@@ -1,0 +1,51 @@
+mutation {
+    makePayment(
+        method: {
+            paymentMethod:{
+                type:"scheme",
+                holderName:"Mr QA Tester",
+                encryptedCardNumber: "test_5100290029002909",
+                encryptedExpiryMonth: "test_03",
+                encryptedExpiryYear: "test_2030",
+                encryptedSecurityCode: "test_737"
+            },
+            browserInfo:{}
+        },
+        amount:{
+            currency:"GBP",
+            value:"{basketTotal}"
+        }
+        countryCode: "GB",
+        customer:{
+            email: "navtest@gmail.com"
+            ipAddress: "182.16.60.244"
+            shopperName: {
+                firstName: "Nav"
+                lastName: "Tester"
+            }
+            deliveryAddress:{
+                addressLine1: "50 Byron Road"
+                postalCode: "E17 4SW"
+                city: "london"
+                country: "GB"
+            }
+        }
+    )
+    {
+        created
+        transactionId
+        paymentId
+        status
+        mode {
+            provider
+            method
+            lastFourCardDigits
+            expiryDate
+        }
+        pspReference
+        money {
+            currency
+            value
+        }
+    }
+}

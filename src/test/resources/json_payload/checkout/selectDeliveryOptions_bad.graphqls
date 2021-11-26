@@ -1,0 +1,26 @@
+mutation{
+    selectDeliveryOption(
+        checkoutId: "{checkoutUUID}",
+        optionId: "{optionID}",
+        instructions: "{deliveryInstruction}"
+    ){
+        id
+        location{
+            type
+            ... on DeliveryLocation {
+                address{
+                    addressLine1
+                    postalCode
+                    city
+                    country
+                }
+                deliveryOption{
+                    price{
+                        amount
+                        currency
+                    }
+                }
+            }
+        }
+    }
+}

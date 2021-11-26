@@ -1,0 +1,53 @@
+mutation {
+    makePayment(
+        method: {
+            paymentMethod:{
+                type:"scheme",
+                holderName:"Mr Nav Tester",
+                encryptedCardNumber: "test_4444333322221111",
+                encryptedExpiryMonth: "test_03",
+                encryptedExpiryYear: "test_2030",
+                encryptedSecurityCode: "test_737"
+            },
+            browserInfo:{}
+        },
+        amount:{
+            currency:"GBP",
+            value:"{basketTotal}"
+        }
+        countryCode: "GB",
+        saveCard: false,
+        customer:{
+            shopperReference: "{customerId}",
+            email: "navtest1@gmail.com"
+            ipAddress: "182.16.60.244"
+            shopperName: {
+                firstName: "Nav"
+                lastName: "Tester"
+            }
+            deliveryAddress:{
+                addressLine1: "57 Blenheim Gardens"
+                postalCode: "RG1 5QG"
+                city: "Reading"
+                country: "GB"
+            }
+        }
+    )
+    {
+        created
+        transactionId
+        paymentId
+        status
+        mode {
+            provider
+            method
+            lastFourCardDigits
+            expiryDate
+        }
+        pspReference
+        money {
+            currency
+            value
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "coordinates":{
+    "radius": "20",
+    "longitude": "-1.133509",
+    "latitude": "52.633854"
+  },
+  "limit":{
+    "maxResult":1000
+  },
+  "currency": "GBP",
+  "deliveryMethods":[
+    "COLLECTION_POINT"
+  ]
+}

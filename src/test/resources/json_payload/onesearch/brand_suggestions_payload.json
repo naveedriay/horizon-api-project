@@ -1,0 +1,9 @@
+{
+  "SiteId":"10",
+  "Locale":"en",
+  "Config":"suggest",
+  "IncludeCategory":true,
+  "IncludeFacets":true,
+  "IncludeBrand":true,
+  "Query":"coconut"
+}

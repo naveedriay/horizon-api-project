@@ -1,0 +1,51 @@
+mutation {
+    makePayment(
+        method: {
+            paymentMethod:{
+                type:"scheme",
+                holderName:"Mr Naveed Riay"
+            },
+            browserInfo:{},
+            cardId: "{cardId}"
+        },
+        amount:{
+            currency:"GBP",
+            value:"{basketTotal}"
+        }
+        countryCode: "GB",
+        freeOrder: true,
+        freeOrderReason: "5th Order Free",
+        customer:{
+            shopperReference: "{customerId}",
+            email: "naveedriay@hollandandbarrett.com"
+            ipAddress: "182.16.60.244"
+            shopperName: {
+                firstName: "Naveed"
+                lastName: "Riay"
+            }
+            deliveryAddress:{
+                addressLine1: "13 Thomasson Road"
+                postalCode: "LE5 4EH"
+                city: "Leicester"
+                country: "GB"
+            }
+        }
+    )
+    {
+        created
+        transactionId
+        paymentId
+        status
+        mode {
+            provider
+            method
+            lastFourCardDigits
+            expiryDate
+        }
+        pspReference
+        money {
+            currency
+            value
+        }
+    }
+}

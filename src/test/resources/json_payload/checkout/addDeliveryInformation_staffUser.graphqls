@@ -1,0 +1,39 @@
+mutation{
+    addDeliveryInformation(
+        checkoutId: "{checkoutUUID}",
+        contact: {
+            title: "Mr"
+            firstName: "Naveed"
+            lastName: "Riay"
+            phoneNumber: "01162123007"
+        },
+        address: {
+            addressLine1: "13 Thomasson Road"
+            postalCode: "LE5 4EH"
+            city: "Leicester"
+            country: "GB"
+        }
+        metadata: {
+            externalId: "997256024"
+        }
+    ){
+        id
+        location{
+            type
+            ... on DeliveryLocation {
+                contact{
+                    title
+                    firstName
+                    lastName
+                    phoneNumber
+                }
+                address{
+                    addressLine1
+                    postalCode
+                    city
+                    country
+                }
+            }
+        }
+    }
+}

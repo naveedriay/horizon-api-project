@@ -1,0 +1,18 @@
+{
+  "currency": "EUR",
+  "locale": "en-FR",
+  "siteId": "65",
+  "incrementQty": false,
+  "customerId": null,
+  "status": "ACTIVE",
+  "items": [
+    {
+      "skuId": "001412",
+      "quantity": 1
+    },
+    {
+      "skuId": "004925",
+      "quantity": 1
+    }
+  ]
+}

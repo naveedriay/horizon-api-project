@@ -1,0 +1,13 @@
+mutation {
+    createCheckout(basketId: "{basketUUID}",
+        source: {
+            channel: WEB,
+            siteId: "65",
+            locale: "en-FR",
+            currency: "EUR"
+        })
+    {
+        id
+        createdAt
+    }
+}

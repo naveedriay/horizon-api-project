@@ -1,0 +1,13 @@
+{
+  "customer": {
+    "email": "test_978565@email.com",
+    "first-name": "fname",
+    "last-name": "lname",
+    "customer-identifier": {
+      "scope": "OCH",
+      "id": "7-10PQR86"
+    }
+  },
+  "locale": "en-GB",
+  "country": "GB"
+}

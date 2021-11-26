@@ -1,0 +1,9 @@
+mutation{
+    deleteCustomerAddress(
+        userId: "{userId}",
+        addressId: "{addressId}"
+    ) {
+        id
+        status
+    }
+}

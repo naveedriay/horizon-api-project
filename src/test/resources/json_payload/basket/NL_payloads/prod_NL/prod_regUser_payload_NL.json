@@ -1,0 +1,18 @@
+{
+  "currency": "GBP",
+  "locale": "en-GB",
+  "siteId": "10",
+  "customerId": "1591686886",
+  "ochId": "1-2D47DMI",
+  "incrementQty": false,
+  "items": [
+    {
+      "skuId": "010994",
+      "quantity": 2
+    },
+    {
+      "skuId": "006011",
+      "quantity": 2
+    }
+  ]
+}

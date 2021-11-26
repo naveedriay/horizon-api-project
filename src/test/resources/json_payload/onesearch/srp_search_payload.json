@@ -1,0 +1,20 @@
+{
+  "SiteId":"10",
+  "Locale":"en",
+  "Config":"srp",
+  "PageNumber":1,
+  "PageSize":20,
+  "SelectedRefinements":{
+
+  },
+  "Overrides":{
+    "ExcludeNotAvailable":true
+  },
+  "AdvancedQuery":"",
+  "IncludeCategory":true,
+  "IncludeFacets":true,
+  "IncludeSortOptions":true,
+  "IncludeBrand":false,
+  "IncludePromotion":true,
+  "Query":"coconut oil"
+}

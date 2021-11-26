@@ -1,0 +1,39 @@
+mutation{
+  addDeliveryInformation(
+    checkoutId: "{checkoutUUID}",
+    contact: {
+      title: "Ms"
+      firstName: "Veronica"
+      lastName: "Padovesi"
+      phoneNumber: "03654089789"
+    },
+    address: {
+      addressLine1: "Via Nuova Agnano 20"
+      postalCode: "84033"
+      city: "Milan"
+      country: "IT"
+    }
+  ){
+    id
+    location{
+      type
+      ... on DeliveryLocation {
+        contact{
+          title
+          firstName
+          lastName
+          phoneNumber
+        }
+        address{
+          addressLine1
+          postalCode
+          city
+          country
+        }
+      }
+      ... on StoreLocation {
+        storeId
+      }
+    }
+  }
+}

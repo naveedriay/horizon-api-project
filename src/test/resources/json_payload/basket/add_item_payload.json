@@ -1,0 +1,13 @@
+{
+  "currency": "GBP",
+  "locale": "en-GB",
+  "siteId": "10",
+  "channel" : "WEB",
+  "incrementQty": false,
+  "items": [
+    {
+      "skuId": "001698",
+      "quantity": 2
+    }
+  ]
+}

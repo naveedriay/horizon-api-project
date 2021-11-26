@@ -1,0 +1,15 @@
+query{
+    paymentCards(checkoutId: "{checkoutUUID}"){
+        id
+        userId
+        token {
+            provider
+            value
+        }
+        lastDigits
+        type
+        expiryMonth
+        expiryYear
+        preferred
+    }
+}

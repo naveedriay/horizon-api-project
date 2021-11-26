@@ -1,0 +1,13 @@
+{
+  "id": "40628b2a-46d0-4902-a7c2-b3fd8d4b06ab",
+  "userId": "977872768",
+  "token": {
+    "provider": "ADYEN",
+    "value": "841632221438493F"
+  },
+  "preferred": false,
+  "lastDigits": "8431",
+  "type": "amex",
+  "expiryMonth": "03",
+  "expiryYear": "2030"
+}

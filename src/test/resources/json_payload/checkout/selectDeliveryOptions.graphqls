@@ -1,0 +1,26 @@
+mutation{
+    selectDeliveryOption(
+        checkoutId: "{checkoutUUID}",
+        optionId: "{optionID}",
+        instructions: "This is long message for the delivery instruction to be tested for equal to 100 characters in length"
+    ){
+        id
+        location{
+            type
+            ... on DeliveryLocation {
+                address{
+                    addressLine1
+                    postalCode
+                    city
+                    country
+                }
+                deliveryOption{
+                    price{
+                        amount
+                        currency
+                    }
+                }
+            }
+        }
+    }
+}

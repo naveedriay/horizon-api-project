@@ -1,0 +1,24 @@
+query{
+  checkoutByBasketId(id: "{basketUUID}"){
+    id
+    createdAt
+    basketId
+    deliveryOptions{
+      optionId
+      type
+    }
+    collectionOptions{
+      id
+      type
+    }
+    events {
+      details
+      status
+      timestamp
+    }
+    customer {
+      customerId
+      email
+    }
+  }
+}

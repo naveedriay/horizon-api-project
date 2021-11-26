@@ -1,0 +1,20 @@
+{
+  "currency": "USD",
+  "locale": "en-US",
+  "siteId": "13",
+  "incrementQty": false,
+  "customerId": null,
+  "status": "ACTIVE",
+  "items": [
+    {
+      "skuId": "060188",
+      "quantity": 1
+    },{
+      "skuId": "060187",
+      "quantity": 1
+    },{
+      "skuId": "048776",
+      "quantity": 1
+    }
+  ]
+}

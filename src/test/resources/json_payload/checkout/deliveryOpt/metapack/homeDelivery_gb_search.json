@@ -1,0 +1,15 @@
+{
+  "address":{
+    "addressLine1": "42 queens gate mews",
+    "postcode": "SW75QN",
+    "countryCode": "GBR",
+    "city": "LONDON"
+  },
+  "limit":{
+    "maxResult":1000
+  },
+  "currency": "GBP",
+  "deliveryMethods":[
+    "HOME_DELIVERY"
+  ]
+}

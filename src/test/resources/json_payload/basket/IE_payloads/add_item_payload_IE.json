@@ -1,0 +1,12 @@
+{
+  "currency": "EUR",
+  "locale": "en-IE",
+  "siteId": "30",
+  "incrementQty": false,
+  "items": [
+    {
+      "skuId": "000120",
+      "quantity": 2
+    }
+  ]
+}

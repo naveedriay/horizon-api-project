@@ -1,0 +1,17 @@
+{
+  "currency": "EUR",
+  "locale": "nl-NL",
+  "siteId": "40",
+  "status": "ACTIVE",
+  "incrementQty": false,
+  "items": [
+    {
+      "skuId": "001014",
+      "quantity": 2
+    }
+  ],
+  "deliveryOption": {
+    "deliveryType": "NEXT_DAY_DELIVERY",
+    "destinationCountry": "NL"
+  }
+}

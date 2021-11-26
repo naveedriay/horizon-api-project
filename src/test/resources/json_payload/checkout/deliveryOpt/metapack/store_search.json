@@ -1,0 +1,12 @@
+{
+  "address":{
+    "postcode": "SW75QN"
+  },
+  "limit":{
+    "maxResult":1000
+  },
+  "currency": "GBP",
+  "deliveryMethods":[
+    "HB_STORE"
+  ]
+}

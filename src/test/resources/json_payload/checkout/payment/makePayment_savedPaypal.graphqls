@@ -1,0 +1,35 @@
+mutation {
+    makePayment(
+        method: {
+            paymentMethod:{
+                type:"paypal"
+            },
+            savedPaymentId: "{paymentId}"
+        },
+        amount:{
+            currency:"GBP",
+            value:"{basketTotal}"
+        }
+        countryCode: "GB",
+        customer:{
+            shopperReference: "979155055",
+            email: "staff@test.com"
+            ipAddress: "182.16.60.244"
+            shopperName: {
+                firstName: "Savitha"
+                lastName: "Lv"
+            }
+        }
+    )
+    {
+        created
+        transactionId
+        paymentId
+        status
+        pspReference
+        money {
+            currency
+            value
+        }
+    }
+}

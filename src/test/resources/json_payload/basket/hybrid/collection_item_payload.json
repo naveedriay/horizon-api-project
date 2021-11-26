@@ -1,0 +1,15 @@
+{
+  "locale": "en-GB",
+  "siteId": "10",
+  "currency": "GBP",
+  "items": [
+    {
+      "skuId": "001993",
+      "quantity": 1
+    },
+    {
+      "skuId": "014673",
+      "quantity": 1
+    }
+  ]
+}
