@@ -1,6 +1,20 @@
 # Compiled class file
 *.class
 
+# Created by .ignore support plugin (hsz.mobi)
+# Ignore compiled files from auto
+
+/target
+
+# Common IDEA files
+.idea
+*.iml
+*.iws
+/.idea/*.*
+/.idea
+.idea/
+target/
+
 # Log file
 *.log
 
