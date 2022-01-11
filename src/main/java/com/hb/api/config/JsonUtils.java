@@ -38,27 +38,31 @@ public class JsonUtils {
         JSONObject json_obj = getCorrectJsonObject(jsonObject, node_name);
         return json_obj.get(lastNode).toString();
     }
+    
+       public JSONObject removeJSONAttribute(JSONObject json_to_send, String attribute_to_remove)  throws JSONException{
+        JSONObject json_obj = getCorrectJsonObject(json_to_send, attribute_to_remove);
+        json_obj.remove(lastNode);
+        return json_to_send;
+    }
 
     public JSONObject modifyJSONAttributes(JSONObject json_to_send, String attribute_name, String new_value) throws JSONException {
         JSONObject modified_json = null;
 
-        if (attribute_name.contains(".")) { // check if node_name has a child node or not
+                if (attribute_name.contains(".")) { // check if node_name has a child node or not
             modified_json = getCorrectJsonObject(json_to_send, attribute_name);
-            if (new_value != null && new_value.equalsIgnoreCase("deleting"))
-                modified_json.remove(lastNode);
-            else if (new_value == null)
+            if (new_value.equals(null))
                 modified_json.put(lastNode, JSONObject.NULL);
             else
-                modified_json.put(lastNode, new_value);
+                modified_json.put(lastNode, getDataTypeFor(new_value));
         } else if(attribute_name.contains("[")){
             modified_json = getCorrectJsonArray(json_to_send, attribute_name, new_value);
             json_to_send = modified_json;
         } else {
             modified_json = getCorrectJsonObject(json_to_send, attribute_name);
-            if (new_value == null)
+            if (new_value.equals(null))
                 modified_json.put(lastNode, JSONObject.NULL);
             else
-                modified_json.put(lastNode, new_value);
+                modified_json.put(lastNode, getDataTypeFor(new_value));
             json_to_send = modified_json;
         }
 
@@ -105,5 +109,31 @@ public class JsonUtils {
             }
         }
         return jsonObj;
+    }
+    
+    private Object getDataTypeFor(String new_input_value){
+        Object return_obj = new Object();
+        String data_type = "";
+        String x = new_input_value.trim();
+
+        try (Scanner scanner = new Scanner(x)) {
+                 if (scanner.hasNextInt()) data_type = "Integer";
+            else if (scanner.hasNextDouble()) data_type = "Double";
+            else if (scanner.hasNextBoolean()) data_type = "Boolean";
+            else data_type = "String";
+        }
+
+        switch (data_type){
+            case "Integer":
+                return_obj = new Integer(new_input_value); break;
+            case "String":
+                return_obj = new StringBuilder(new_input_value); break;
+            case "Boolean":
+                return_obj = new Boolean(new_input_value); break;
+            case "Double":
+                return_obj = new Double(new_input_value); break;
+
+        }
+        return return_obj;
     }
 }
