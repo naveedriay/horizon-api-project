@@ -114,13 +114,18 @@ public class JsonUtils {
     private Object getDataTypeFor(String new_input_value){
         Object return_obj = new Object();
         String data_type = "";
-        String x = new_input_value.trim();
 
-        try (Scanner scanner = new Scanner(x)) {
-                 if (scanner.hasNextInt()) data_type = "Integer";
-            else if (scanner.hasNextDouble()) data_type = "Double";
-            else if (scanner.hasNextBoolean()) data_type = "Boolean";
-            else data_type = "String";
+        if(new_input_value.startsWith("\"") && new_input_value.endsWith("\"")){
+            new_input_value = new_input_value.replaceAll("^\"|\"$", "");
+            data_type = "String";
+        }
+        else {
+            try (Scanner scanner = new Scanner(new_input_value)) {
+                if (scanner.hasNextInt()) data_type = "Integer";
+                else if (scanner.hasNextDouble()) data_type = "Double";
+                else if (scanner.hasNextBoolean()) data_type = "Boolean";
+                else data_type = "String";
+            }
         }
 
         switch (data_type){
